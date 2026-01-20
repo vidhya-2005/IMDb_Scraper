@@ -33,7 +33,7 @@ This project uses **Selenium** for live scraping and **Flask** to serve a clean 
 
 ---
 
-##Installation
+Installation
 
 ```bash
 pip install -r requirements.txt
@@ -81,7 +81,7 @@ IMDb_Scraper_Project/
 ![Output](output.png)
 ![Output](csv_output.png)
 
-##Author
+Author
 
 **Vidhya Vinothkumar**
 *vidhhya.2010@gmail.com*
