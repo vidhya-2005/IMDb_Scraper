@@ -79,6 +79,7 @@ IMDb_Scraper_Project/
 ## Output Images
 
 ![Output](output.png)
+![Output](csv_output.png)
 
 ##Author
 
