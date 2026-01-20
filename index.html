@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Top 250</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>IMDb Top 250</h1>
+
+    <div class="controls">
+        <button id="scrapeBtn" onclick="startScrape()">Scrape Data</button>
+        
+        <div class="filter-group">
+            <select id="sortSelect" onchange="applyFilters()">
+                <option value="rating_high">Rating: High to Low</option>
+                <option value="rating_low">Rating: Low to High</option>
+                <option value="date_new">Date: New to Old</option>
+                <option value="date_old">Date: Old to New</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <select id="genreFilter" onchange="applyFilters()">
+                <option value="all">All Genres</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Crime">Crime</option>
+                <option value="Animation">Animation</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+            </select>
+        </div>
+        <span id="status">Ready.</span>
+    </div>
+
+    <div class="table-container">
+        <table id="movieTable">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Rank</th>
+                    <th style="width: 35%;">Movie Title</th>
+                    <th style="width: 25%;">Genre</th>
+                    <th style="width: 15%;">Date</th>
+                    <th style="width: 15%;">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
